@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
 import {
-  Shield, Users, Award, Clock, Car, Heart, LifeBuoy, ArrowRight
+  Car, Heart, LifeBuoy, ArrowRight
 } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -83,10 +83,10 @@ export function Home() {
   ];
 
   const features = [
-    { icon: Shield, title: t("home.features.licensed"),     description: t("home.features.licensedDesc") },
-    { icon: Users,  title: t("home.features.experts"),      description: t("home.features.expertsDesc") },
-    { icon: Award,  title: t("home.features.underwriters"), description: t("home.features.underwritersDesc") },
-    { icon: Clock,  title: t("home.features.claims"),       description: t("home.features.claimsDesc") },
+    { title: t("home.features.licensed"),     description: t("home.features.licensedDesc") },
+    { title: t("home.features.experts"),      description: t("home.features.expertsDesc") },
+    { title: t("home.features.underwriters"), description: t("home.features.underwritersDesc") },
+    { title: t("home.features.claims"),       description: t("home.features.claimsDesc") },
   ];
 
   return (
@@ -157,7 +157,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           FEATURES
       ══════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section className="py-14 bg-white">
         <div className="container mx-auto px-6">
           <p className="text-[#6d001a] text-xs font-bold uppercase tracking-[3px] mb-2">
             Why choose us
@@ -166,16 +166,13 @@ export function Home() {
             {t("home.features.title")}
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-5 mt-14">
+          <div className="grid md:grid-cols-4 gap-5 mt-8">
             {features.map((f, i) => (
               <Card
                 key={i}
                 className="group border border-gray-100 hover:border-[#6d001a] hover:-translate-y-1 transition-all duration-200 hover:shadow-lg"
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-xl bg-[#6d001a] flex items-center justify-center mb-4">
-                    <f.icon className="h-5 w-5 text-white" />
-                  </div>
                   <CardTitle className="text-base font-bold">{f.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-sm text-gray-500 leading-relaxed">
@@ -190,7 +187,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           PRODUCTS
       ══════════════════════════════════════════ */}
-      <section className="py-24 bg-white border-t border-[#262626]/8">
+      <section className="py-14 bg-white border-t border-[#262626]/8">
         <div className="container mx-auto px-6">
           <p className="text-[#6d001a] text-xs font-bold uppercase tracking-[3px] mb-2">
             Our Products
@@ -199,7 +196,7 @@ export function Home() {
             {t("home.products.title")}
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-5 mt-14">
+          <div className="grid md:grid-cols-3 gap-5 mt-8">
             {products.map((product) => (
               <Link key={product.id} to={`/products/${product.id}`}>
                 <Card className="group brand-card border-0 hover:-translate-y-1 hover:shadow-xl transition-all duration-200 cursor-pointer overflow-hidden">
@@ -227,7 +224,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           CTA
       ══════════════════════════════════════════ */}
-      <section className="py-24 bg-white text-center border-t border-[#262626]/8">
+      <section className="py-14 bg-white text-center border-t border-[#262626]/8">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#262626] tracking-tight max-w-xl mx-auto leading-tight">
           {t("home.cta.title")}
         </h2>

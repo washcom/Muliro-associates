@@ -7,7 +7,6 @@ import { ProductDetail } from "./pages/ProductDetail";
 import { Partners } from "./pages/Partners";
 import { Quote } from "./pages/Quote";
 import { Contact } from "./pages/Contact";
-import { Blog } from "./pages/Blog";
 import { FAQ } from "./pages/FAQ";
 import { NotFound } from "./pages/NotFound";
 
@@ -23,7 +22,6 @@ export const router = createBrowserRouter([
       { path: "partners", Component: Partners },
       { path: "quote", Component: Quote },
       { path: "contact", Component: Contact },
-      { path: "blog", Component: Blog },
       { path: "faq", Component: FAQ },
       { path: "*", Component: NotFound },
     ],

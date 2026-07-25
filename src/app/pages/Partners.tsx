@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
-import { Shield, Award, TrendingUp, Users } from "lucide-react";
 
 export function Partners() {
   const partners = [
@@ -47,22 +46,18 @@ export function Partners() {
 
   const benefits = [
     {
-      icon: Shield,
       title: "Financial Strength",
       description: "All our partners are financially stable and licensed by the Insurance Regulatory Authority",
     },
     {
-      icon: Award,
       title: "Industry Leaders",
       description: "We work only with top-rated underwriters known for reliability and excellence",
     },
     {
-      icon: TrendingUp,
       title: "Competitive Rates",
       description: "Access to multiple underwriters allows us to find you the best premium rates",
     },
     {
-      icon: Users,
       title: "Wide Coverage",
       description: "Our diverse partnerships ensure comprehensive solutions for every insurance need",
     },
@@ -70,9 +65,8 @@ export function Partners() {
 
   return (
     <div>
-      <section className="brand-hero py-20">
+      <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
-          <div className="brand-pill mb-5">Strong underwriter network</div>
           <h1 className="text-4xl md:text-6xl mb-4 font-bold text-[#262626]">Our Insurance Partners</h1>
           <p className="text-xl text-[#262626]/70 max-w-3xl">
             We partner with Kenya's leading insurance underwriters to bring you the best coverage options
@@ -80,22 +74,19 @@ export function Partners() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="max-w-4xl mx-auto text-center mb-6">
             <h2 className="text-3xl mb-4 font-bold text-[#262626]">Working with the Best</h2>
             <p className="text-lg text-[#262626]/65">
               As an independent insurance intermediary, we've carefully selected partnerships with Kenya's most reputable underwriters. This gives you access to a wide range of products and competitive premium rates.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {benefits.map((benefit, index) => (
               <Card key={index} className="brand-card text-center border-2 border-transparent">
                 <CardHeader>
-                  <div className="mx-auto mb-3 w-14 h-14 bg-[#6d001a] rounded-full flex items-center justify-center">
-                    <benefit.icon className="h-7 w-7 text-white" />
-                  </div>
                   <CardTitle className="text-lg text-[#262626]">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -133,33 +124,7 @@ export function Partners() {
         </div>
       </section>
 
-      <section className="brand-section-soft py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl mb-4 font-bold text-[#262626]">Why Multiple Partners Matter</h2>
-          <p className="text-lg text-[#262626]/65 max-w-3xl mx-auto mb-8">
-            Unlike agents who represent a single insurer, we work with multiple top underwriters. This means we can compare products, coverage options, and premium rates to find the perfect solution for your specific needs.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-left">
-            <div className="brand-card p-6 rounded-[1.75rem]">
-              <div className="text-4xl mb-3">🎯</div>
-              <h3 className="text-xl font-semibold mb-2">Better Choice</h3>
-              <p className="text-[#262626]/65">Access to diverse products from multiple insurers gives you more options</p>
-            </div>
-            <div className="brand-card p-6 rounded-[1.75rem]">
-              <div className="text-4xl mb-3">💰</div>
-              <h3 className="text-xl font-semibold mb-2">Competitive Rates</h3>
-              <p className="text-[#262626]/65">We compare premiums across underwriters to find you the best value</p>
-            </div>
-            <div className="brand-card p-6 rounded-[1.75rem]">
-              <div className="text-4xl mb-3">🤝</div>
-              <h3 className="text-xl font-semibold mb-2">Unbiased Advice</h3>
-              <p className="text-[#262626]/65">We work for you, not the insurance companies, ensuring objective recommendations</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="brand-section-dark py-16 border-t border-[#262626]/8">
+      <section className="brand-section-dark py-10 border-t border-[#262626]/8">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl mb-4 font-bold text-[#262626]">All Partners are IRA Licensed</h2>
           <p className="text-lg text-[#262626]/70 max-w-2xl mx-auto">

@@ -111,7 +111,7 @@ export function FAQ() {
 
   return (
     <div>
-      <section className="brand-hero py-20">
+      <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-4">
             <HelpCircle className="h-12 w-12 text-[#6d001a]" />
@@ -123,11 +123,11 @@ export function FAQ() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {faqCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="mb-12">
+              <div key={categoryIndex} className="mb-6">
                 <h2 className="text-2xl md:text-3xl mb-6 text-[#262626] font-bold">{category.category}</h2>
                 <Accordion type="single" collapsible className="space-y-4">
                   {category.questions.map((item, index) => (
@@ -151,7 +151,7 @@ export function FAQ() {
         </div>
       </section>
 
-      <section className="brand-section-soft py-16">
+      <section className="brand-section-soft py-10">
         <div className="container mx-auto px-4">
           <Card className="brand-card max-w-3xl mx-auto text-center border-2 border-transparent">
             <CardHeader>

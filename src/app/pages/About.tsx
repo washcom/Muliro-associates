@@ -1,128 +1,96 @@
-import { Shield, Target, Eye, Award, Users, TrendingUp, CheckCircle2 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { CheckCircle2 } from "lucide-react";
 
 export function About() {
   const values = [
     {
-      icon: Shield,
       title: "Integrity",
       description: "We operate with transparency and honesty in all our dealings",
     },
     {
-      icon: Users,
       title: "Client-Focused",
       description: "Your needs and interests always come first",
     },
     {
-      icon: Award,
       title: "Excellence",
       description: "We strive for the highest standards in service delivery",
     },
     {
-      icon: TrendingUp,
       title: "Innovation",
       description: "We embrace new technologies to serve you better",
     },
   ];
 
   const whyChooseUs = [
-    "Independent intermediary - we work for you, not insurance companies",
-    "Access to multiple top-rated underwriters in Kenya",
-    "Expert advice tailored to your specific needs",
-    "Competitive premium rates through our extensive network",
-    "Comprehensive claims support and advocacy",
-    "Fully licensed by the Insurance Regulatory Authority (IRA)",
-    "Personalized service from experienced professionals",
-    "No hidden fees - transparent pricing",
+    "Independent advice, not tied to one insurer",
+    "Access to Kenya's top-rated underwriters",
+    "Competitive rates through our network",
+    "Full claims support, start to finish",
+    "IRA licensed and fully regulated",
+    "Transparent pricing, no hidden fees",
   ];
 
   return (
     <div>
-      <section className="brand-hero py-20">
+      <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
-          <div className="brand-pill mb-5">Trusted insurance guidance</div>
           <h1 className="text-4xl md:text-6xl mb-4 font-bold tracking-tight text-[#262626]">About Muliro & Associates</h1>
-          <p className="text-xl text-[#262626]/72 max-w-3xl">
-            Kenya's trusted insurance intermediary, committed to protecting what matters most to you
+          <p className="text-xl text-[#262626]/72 max-w-lg">
+            Kenya's trusted insurance intermediary, committed to protecting what matters most to you.
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white border-t border-[#262626]/8">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl mb-6 font-bold text-[#262626]">Our Story</h2>
-              <div className="space-y-4 text-[#262626]/72">
-                <p>
-                  Founded over a decade ago, Muliro & Associates has grown to become one of Kenya's most trusted insurance intermediaries. Our journey began with a simple mission: to make quality insurance accessible and understandable for all Kenyans.
-                </p>
-                <p>
-                  We recognized that navigating the insurance landscape can be complex and overwhelming. That's why we positioned ourselves as independent advisors who work exclusively in your interest, helping you find the best coverage from Kenya's top underwriters.
-                </p>
-                <p>
-                  Today, we serve thousands of individuals, families, and businesses across Kenya, providing personalized insurance solutions backed by expert advice and unwavering support.
-                </p>
-              </div>
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Our Story</h2>
+            <p className="text-[#262626]/72">
+              Founded over a decade ago, Muliro & Associates has grown into one of Kenya's most trusted insurance intermediaries. We work as independent advisors, not tied to any single insurer, helping individuals, families, and businesses find the right coverage from Kenya's top underwriters.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="text-center sm:text-left">
+              <h3 className="text-xl font-bold text-[#262626] mb-2">Our Mission</h3>
+              <p className="text-[#262626]/72">
+                Accessible, reliable insurance solutions that protect what matters most to our clients.
+              </p>
             </div>
-            <div className="brand-card rounded-[2rem] p-8">
-              <div className="space-y-6">
-                <div>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Target className="h-8 w-8 text-[#6d001a]" />
-                    <h3 className="text-2xl font-bold text-[#262626]">Our Mission</h3>
-                  </div>
-                  <p className="text-[#262626]/72">
-                    To provide accessible, reliable, and personalized insurance solutions that protect our clients' financial wellbeing and give them peace of mind.
-                  </p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Eye className="h-8 w-8 text-[#6d001a]" />
-                    <h3 className="text-2xl font-bold text-[#262626]">Our Vision</h3>
-                  </div>
-                  <p className="text-[#262626]/72">
-                    To be Kenya's leading insurance intermediary, recognized for exceptional service, integrity, and our commitment to client success.
-                  </p>
-                </div>
-              </div>
+            <div className="text-center sm:text-left">
+              <h3 className="text-xl font-bold text-[#262626] mb-2">Our Vision</h3>
+              <p className="text-[#262626]/72">
+                Kenya's leading insurance intermediary, known for exceptional service and integrity.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="brand-section-soft py-16">
+      <section className="brand-section-soft py-10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Our Core Values</h2>
             <p className="text-lg text-[#262626]/65">The principles that guide everything we do</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="brand-card text-center border-2 border-transparent hover:border-[#6d001a]/60 transition-colors">
-                <CardHeader>
-                  <div className="mx-auto mb-4 w-16 h-16 bg-[#6d001a] rounded-full flex items-center justify-center">
-                    <value.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl text-[#262626]">{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-[#262626]/65">{value.description}</p>
-                </CardContent>
-              </Card>
+              <div key={index} className="text-center p-6">
+                <div className="text-sm font-bold text-[#6d001a]/40 mb-2">0{index + 1}</div>
+                <h3 className="text-xl font-bold text-[#262626] mb-2">{value.title}</h3>
+                <p className="text-[#262626]/65">{value.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl mb-8 text-center font-bold text-[#262626]">Why Choose Muliro & Associates?</h2>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
               {whyChooseUs.map((reason, index) => (
-                <div key={index} className="flex items-start gap-3 brand-card p-4 rounded-2xl">
-                  <CheckCircle2 className="h-6 w-6 text-[#6d001a] flex-shrink-0 mt-0.5" />
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#6d001a] flex-shrink-0 mt-0.5" />
                   <span className="text-[#262626]/75">{reason}</span>
                 </div>
               ))}
@@ -131,23 +99,19 @@ export function About() {
         </div>
       </section>
 
-      <section className="brand-section-dark py-16 border-t border-[#262626]/8">
+      <section className="brand-section-dark py-10 border-t border-[#262626]/8">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Licensed & Regulated</h2>
-          <p className="text-xl text-[#262626]/70 max-w-2xl mx-auto mb-8">
-            Muliro & Associates is fully licensed by the Insurance Regulatory Authority (IRA) of Kenya, ensuring compliance with all regulatory standards and client protection requirements.
+          <p className="text-xl text-[#262626]/70 max-w-2xl mx-auto mb-6">
+            Fully licensed by the Insurance Regulatory Authority (IRA) of Kenya.
           </p>
-          <div className="flex justify-center gap-8 text-left max-w-2xl mx-auto">
-            <div className="brand-card-dark rounded-3xl p-6 flex-1">
-              <div className="text-4xl mb-2 text-[#6d001a]">✓</div>
-              <div className="text-lg text-[#262626]">IRA Licensed</div>
-              <div className="text-sm text-[#262626]/60">Fully Compliant</div>
-            </div>
-            <div className="brand-card-dark rounded-3xl p-6 flex-1">
-              <div className="text-4xl mb-2 text-[#6d001a]">✓</div>
-              <div className="text-lg text-[#262626]">Professional Standards</div>
-              <div className="text-sm text-[#262626]/60">Certified Advisors</div>
-            </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            <span className="inline-flex items-center gap-2 brand-card-dark px-5 py-3 rounded-full text-sm font-semibold text-[#262626]">
+              <span className="text-[#6d001a]">✓</span> IRA Licensed
+            </span>
+            <span className="inline-flex items-center gap-2 brand-card-dark px-5 py-3 rounded-full text-sm font-semibold text-[#262626]">
+              <span className="text-[#6d001a]">✓</span> Professional Standards
+            </span>
           </div>
         </div>
       </section>

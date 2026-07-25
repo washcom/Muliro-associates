@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappNumber = "254700123456";
+  const whatsappNumber = "254724794950";
   const message = encodeURIComponent("Hello, I would like to inquire about insurance products.");
 
   return (

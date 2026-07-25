@@ -60,7 +60,7 @@ export function Quote() {
 
   return (
     <div>
-      <section className="brand-hero py-20">
+      <section className="brand-hero py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="brand-pill mb-5">Fast, personalized pricing</div>
           <h1 className="text-5xl md:text-6xl mb-4 text-[#262626] font-bold">Request a Quote</h1>
@@ -70,9 +70,9 @@ export function Quote() {
         </div>
       </section>
 
-      <section className="brand-section-soft py-16">
+      <section className="brand-section-soft py-10">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">
               <Card className="brand-card">
                 <CardHeader>

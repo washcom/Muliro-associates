@@ -103,7 +103,7 @@ export function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="container mx-auto px-4 py-16 text-center">
+      <div className="container mx-auto px-4 py-10 text-center">
         <h1 className="text-3xl mb-4">Product Not Found</h1>
         <Button asChild>
           <Link to="/products">Back to Products</Link>
@@ -114,7 +114,7 @@ export function ProductDetail() {
 
   return (
     <div>
-      <section className={`${product.bgColor} py-16`}>
+      <section className={`${product.bgColor} py-10`}>
         <div className="container mx-auto px-4">
           <Button asChild variant="ghost" className="mb-6">
             <Link to="/products">
@@ -133,13 +133,13 @@ export function ProductDetail() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h2 className="text-3xl mb-4 font-bold text-[#262626]">Overview</h2>
-            <p className="text-lg text-[#262626]/72 mb-8">{product.longDescription}</p>
+            <p className="text-lg text-[#262626]/72 mb-6">{product.longDescription}</p>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="brand-card">
                 <CardHeader>
                   <CardTitle>What's Covered</CardTitle>
@@ -194,10 +194,10 @@ export function ProductDetail() {
         </div>
       </section>
 
-      <section className="brand-section-dark py-16 border-t border-[#262626]/8">
+      <section className="brand-section-dark py-10 border-t border-[#262626]/8">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Ready to Get Started?</h2>
-          <p className="text-xl text-[#262626]/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#262626]/70 mb-6 max-w-2xl mx-auto">
             Request a personalized quote for {product.title.toLowerCase()} today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -6,12 +6,12 @@ export function NotFound() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center brand-section-soft px-4">
       <div className="text-center">
-        <div className="mb-8">
+        <div className="mb-6">
           <h1 className="text-9xl font-bold text-[#262626]">404</h1>
           <div className="text-6xl mb-4">🔍</div>
         </div>
         <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Page Not Found</h2>
-        <p className="text-lg text-[#262626]/64 mb-8 max-w-md mx-auto">
+        <p className="text-lg text-[#262626]/64 mb-6 max-w-md mx-auto">
           Sorry, the page you're looking for doesn't exist or has been moved.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

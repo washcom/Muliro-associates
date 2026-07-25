@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Textarea } from "../components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Phone, Mail, MessageCircle } from "lucide-react";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -27,84 +27,89 @@ export function Contact() {
 
   return (
     <div>
-      <section className="brand-hero py-20">
+      <section className="brand-hero py-12">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="brand-pill mb-5">Support that feels human</div>
           <h1 className="text-5xl md:text-6xl mb-4 text-[#262626] font-bold">Contact Us</h1>
-          <p className="text-xl text-[#262626]/70 max-w-3xl">
+          <p className="text-xl text-[#262626]/70 max-w-3xl mb-6">
             Get in touch with our team. We're here to help with all your insurance needs.
           </p>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild size="lg" className="bg-[#6d001a] text-white hover:bg-[#6d001a]/90">
+              <a href="tel:+254768777041">
+                <Phone className="mr-2 h-4 w-4" /> Call Now
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a href="mailto:mulirofrancis5@gmail.com">
+                <Mail className="mr-2 h-4 w-4" /> Email Us
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a
+                href="https://wa.me/254724794950?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20insurance%20products."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
-              <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <MapPin className="h-7 w-7 text-white" />
-                </div>
-                <CardTitle className="text-xl text-[#262626]">Visit Our Office</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-[#262626]/72 leading-relaxed">
+          <div className="grid lg:grid-cols-5 gap-10">
+            <div className="lg:col-span-2 space-y-8">
+              <div>
+                <h3 className="font-bold text-lg text-[#262626] mb-1">Visit Our Office</h3>
+                <p className="text-[#262626]/70 leading-relaxed">
                   Muliro & Associates<br />
                   Moi Avenue, CBD<br />
                   Nairobi, Kenya
                 </p>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
-              <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Phone className="h-7 w-7 text-white" />
-                </div>
-                <CardTitle className="text-xl text-[#262626]">Call Us</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <div className="text-sm text-[#262626]/60">Phone:</div>
-                  <a href="tel:+254768777041" className="brand-link text-lg font-semibold">
-                    +254 768 777 041
-                  </a>
-                </div>
-                <div>
-                  <div className="text-sm text-[#262626]/60">Alternative:</div>
-                  <a href="tel:+254724794950" className="brand-link text-lg font-semibold">
-                    +254 724 794 950
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+              <div>
+                <h3 className="font-bold text-lg text-[#262626] mb-1">Call Us</h3>
+                <a href="tel:+254768777041" className="block brand-link font-semibold text-lg">
+                  +254 768 777 041
+                </a>
+                <a href="tel:+254724794950" className="block brand-link font-semibold text-lg">
+                  +254 724 794 950
+                </a>
+              </div>
 
-            <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
-              <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Mail className="h-7 w-7 text-white" />
-                </div>
-                <CardTitle className="text-xl text-[#262626]">Email Us</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <div className="text-sm text-[#262626]/60">General Inquiries:</div>
-                  <a href="mailto:mulirofrancis5@gmail.com" className="brand-link break-all font-semibold">
-                    mulirofrancis5@gmail.com
-                  </a>
-                </div>
-                <div>
-                  <div className="text-sm text-[#262626]/60">Claims Support:</div>
-                  <a href="mailto:mulirofrancis5@gmail.com" className="brand-link break-all font-semibold">
-                    mulirofrancis5@gmail.com
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+              <div>
+                <h3 className="font-bold text-lg text-[#262626] mb-1">Email Us</h3>
+                <a href="mailto:mulirofrancis5@gmail.com" className="block brand-link font-semibold break-all">
+                  mulirofrancis5@gmail.com
+                </a>
+              </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
+              <div className="brand-card rounded-2xl p-5">
+                <h3 className="font-bold text-[#262626] mb-3">Office Hours</h3>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-[#262626]/60">Monday - Friday</span>
+                    <span className="text-[#262626]">8:00 AM - 5:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#262626]/60">Saturday</span>
+                    <span className="text-[#262626]">9:00 AM - 1:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#262626]/60">Sunday</span>
+                    <span className="text-[#262626]">Closed</span>
+                  </div>
+                </div>
+                <p className="text-xs text-[#262626]/50 mt-3 pt-3 border-t border-[#262626]/10">
+                  Emergency claims support available 24/7
+                </p>
+              </div>
+            </div>
+
+            <div className="lg:col-span-3">
               {submitted ? (
                 <Card className="brand-card">
                   <CardHeader>
@@ -199,65 +204,12 @@ export function Contact() {
                 </Card>
               )}
             </div>
-
-            <div className="space-y-6">
-              <div className="relative">
-                <div className="absolute inset-0 bg-[#6d001a] rounded-2xl blur-2xl opacity-10"></div>
-                <Card className="relative brand-card text-[#262626] border-0 shadow-2xl">
-                  <CardHeader>
-                    <div className="flex items-center gap-3 mb-2">
-                      <Clock className="h-8 w-8 text-[#6d001a]" />
-                      <CardTitle className="text-2xl">Office Hours</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
-                      <span className="text-[#262626]/60">Monday - Friday:</span>
-                      <span>8:00 AM - 5:00 PM</span>
-                    </div>
-                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
-                      <span className="text-[#262626]/60">Saturday:</span>
-                      <span>9:00 AM - 1:00 PM</span>
-                    </div>
-                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
-                      <span className="text-[#262626]/60">Sunday:</span>
-                      <span>Closed</span>
-                    </div>
-                    <div className="pt-4 mt-4 border-t border-[#262626]/10">
-                      <p className="text-sm text-[#262626]/60">
-                        Emergency claims support available 24/7
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="brand-card">
-                <CardHeader>
-                  <CardTitle>Quick Links</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <a href="/quote" className="block brand-link font-medium hover:underline">
-                    Request a Quote →
-                  </a>
-                  <a href="/products" className="block brand-link font-medium hover:underline">
-                    View Our Products →
-                  </a>
-                  <a href="/faq" className="block brand-link font-medium hover:underline">
-                    Frequently Asked Questions →
-                  </a>
-                  <a href="/partners" className="block brand-link font-medium hover:underline">
-                    Our Insurance Partners →
-                  </a>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="py-0 bg-white">
-        <div className="w-full h-96">
+        <div className="w-full h-80">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.815365165658!2d36.81722931475393!3d-1.2864354990632948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6bb562d37%3A0x2ae8ce32e6c6c0b7!2sMoi%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1234567890123"
             width="100%"
