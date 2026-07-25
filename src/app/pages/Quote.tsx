@@ -40,13 +40,13 @@ export function Quote() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-[#0d000a]/72">
+            <p className="text-[#262626]/72">
               One of our insurance advisors will review your request and contact you within 24 hours with a personalized quote.
             </p>
-            <div className="bg-[#fedd00]/14 p-4 rounded-2xl">
-              <p className="text-sm text-[#0d000a]/72">
+            <div className="bg-[#6d001a]/14 p-4 rounded-2xl">
+              <p className="text-sm text-[#262626]/72">
                 <strong>Need immediate assistance?</strong><br />
-                Call us at: <a href="tel:+254700123456" className="brand-link hover:underline">+254 700 123 456</a>
+                Call us at: <a href="tel:+254768777041" className="brand-link hover:underline">+254 768 777 041</a>
               </p>
             </div>
             <Button onClick={() => setSubmitted(false)} variant="outline" className="w-full">
@@ -63,8 +63,8 @@ export function Quote() {
       <section className="brand-hero py-20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="brand-pill mb-5">Fast, personalized pricing</div>
-          <h1 className="text-5xl md:text-6xl mb-4 text-[#fedd00] font-bold">Request a Quote</h1>
-          <p className="text-xl text-[#f3f2f2]/80 max-w-3xl">
+          <h1 className="text-5xl md:text-6xl mb-4 text-[#262626] font-bold">Request a Quote</h1>
+          <p className="text-xl text-[#262626]/70 max-w-3xl">
             Fill out the form below and our expert advisors will prepare a personalized quote for you
           </p>
         </div>
@@ -99,7 +99,7 @@ export function Quote() {
                         <Input
                           id="phone"
                           type="tel"
-                          placeholder="+254 700 123 456"
+                          placeholder="+254 768 777 041"
                           value={formData.phone}
                           onChange={(e) => handleChange("phone", e.target.value)}
                           required
@@ -133,9 +133,6 @@ export function Quote() {
                           <SelectItem value="motor">Motor Insurance</SelectItem>
                           <SelectItem value="health">Health Insurance</SelectItem>
                           <SelectItem value="life">Life Insurance</SelectItem>
-                          <SelectItem value="business">Business Insurance</SelectItem>
-                          <SelectItem value="travel">Travel Insurance</SelectItem>
-                          <SelectItem value="education">Education Plans</SelectItem>
                           <SelectItem value="other">Other / Not Sure</SelectItem>
                         </SelectContent>
                       </Select>
@@ -162,30 +159,30 @@ export function Quote() {
 
             <div className="space-y-6">
               <div className="relative">
-                <div className="absolute inset-0 bg-[#fedd00] rounded-2xl blur-2xl opacity-20"></div>
-                <Card className="relative brand-section-dark text-white border-0 shadow-2xl">
+                <div className="absolute inset-0 bg-[#6d001a] rounded-2xl blur-2xl opacity-10"></div>
+                <Card className="relative brand-card text-[#262626] border-0 shadow-2xl">
                   <CardHeader>
                     <CardTitle className="text-2xl">Need Help?</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-[#f3f2f2]/74">
+                    <p className="text-[#262626]/70">
                       Our insurance advisors are available to answer your questions and guide you through the process.
                     </p>
                     <div className="space-y-4">
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                        <div className="text-sm text-[#f3f2f2]/70">Call Us:</div>
-                        <a href="tel:+254700123456" className="text-xl hover:underline">
-                          +254 700 123 456
+                      <div className="bg-[#262626]/5 rounded-xl p-4">
+                        <div className="text-sm text-[#262626]/60">Call Us:</div>
+                        <a href="tel:+254768777041" className="text-xl text-[#6d001a] hover:underline">
+                          +254 768 777 041
                         </a>
                       </div>
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                        <div className="text-sm text-[#f3f2f2]/70">Email:</div>
-                        <a href="mailto:info@muliroassociates.co.ke" className="text-lg hover:underline break-all">
-                          info@muliroassociates.co.ke
+                      <div className="bg-[#262626]/5 rounded-xl p-4">
+                        <div className="text-sm text-[#262626]/60">Email:</div>
+                        <a href="mailto:mulirofrancis5@gmail.com" className="text-lg text-[#6d001a] hover:underline break-all">
+                          mulirofrancis5@gmail.com
                         </a>
                       </div>
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                        <div className="text-sm text-[#f3f2f2]/70 mb-2">Office Hours:</div>
+                      <div className="bg-[#262626]/5 rounded-xl p-4">
+                        <div className="text-sm text-[#262626]/60 mb-2">Office Hours:</div>
                         <div>Mon - Fri: 8:00 AM - 5:00 PM</div>
                         <div>Sat: 9:00 AM - 1:00 PM</div>
                       </div>
@@ -206,7 +203,7 @@ export function Quote() {
                       </div>
                       <div>
                         <strong>We Review Your Request</strong>
-                        <p className="text-[#0d000a]/62">Our team analyzes your needs</p>
+                        <p className="text-[#262626]/62">Our team analyzes your needs</p>
                       </div>
                     </li>
                     <li className="flex gap-3">
@@ -215,7 +212,7 @@ export function Quote() {
                       </div>
                       <div>
                         <strong>Compare Options</strong>
-                        <p className="text-[#0d000a]/62">We check rates from multiple underwriters</p>
+                        <p className="text-[#262626]/62">We check rates from multiple underwriters</p>
                       </div>
                     </li>
                     <li className="flex gap-3">
@@ -224,7 +221,7 @@ export function Quote() {
                       </div>
                       <div>
                         <strong>Receive Your Quote</strong>
-                        <p className="text-[#0d000a]/62">Get personalized recommendations within 24 hours</p>
+                        <p className="text-[#262626]/62">Get personalized recommendations within 24 hours</p>
                       </div>
                     </li>
                     <li className="flex gap-3">
@@ -233,7 +230,7 @@ export function Quote() {
                       </div>
                       <div>
                         <strong>Choose & Purchase</strong>
-                        <p className="text-[#0d000a]/62">Select your preferred option and get covered</p>
+                        <p className="text-[#262626]/62">Select your preferred option and get covered</p>
                       </div>
                     </li>
                   </ol>

@@ -114,10 +114,10 @@ export function FAQ() {
       <section className="brand-hero py-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-4">
-            <HelpCircle className="h-12 w-12 text-[#fedd00]" />
-            <h1 className="text-4xl md:text-5xl font-bold">Frequently Asked Questions</h1>
+            <HelpCircle className="h-12 w-12 text-[#6d001a]" />
+            <h1 className="text-4xl md:text-5xl font-bold text-[#262626]">Frequently Asked Questions</h1>
           </div>
-          <p className="text-xl text-[#f3f2f2]/80 max-w-3xl">
+          <p className="text-xl text-[#262626]/70 max-w-3xl">
             Find answers to common questions about insurance and our services
           </p>
         </div>
@@ -128,7 +128,7 @@ export function FAQ() {
           <div className="max-w-4xl mx-auto">
             {faqCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="mb-12">
-                <h2 className="text-2xl md:text-3xl mb-6 text-[#0d000a] font-bold">{category.category}</h2>
+                <h2 className="text-2xl md:text-3xl mb-6 text-[#262626] font-bold">{category.category}</h2>
                 <Accordion type="single" collapsible className="space-y-4">
                   {category.questions.map((item, index) => (
                     <AccordionItem
@@ -139,7 +139,7 @@ export function FAQ() {
                       <AccordionTrigger className="text-left hover:no-underline">
                         <span className="font-semibold">{item.question}</span>
                       </AccordionTrigger>
-                      <AccordionContent className="text-[#0d000a]/72 pt-2">
+                      <AccordionContent className="text-[#262626]/72 pt-2">
                         {item.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -170,9 +170,9 @@ export function FAQ() {
                 </Button>
               </div>
               <div className="mt-6 pt-6 border-t">
-                <p className="text-sm text-[#0d000a]/60 mb-2">Or call us directly:</p>
-                <a href="tel:+254700123456" className="text-2xl brand-link font-bold">
-                  +254 700 123 456
+                <p className="text-sm text-[#262626]/60 mb-2">Or call us directly:</p>
+                <a href="tel:+254768777041" className="text-2xl brand-link font-bold">
+                  +254 768 777 041
                 </a>
               </div>
             </CardContent>

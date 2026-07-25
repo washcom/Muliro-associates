@@ -114,10 +114,10 @@ html {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+    box-shadow: 0 0 20px rgba(109, 0, 26, 0.4);
   }
   50% {
-    box-shadow: 0 0 40px rgba(250, 204, 21, 0.8);
+    box-shadow: 0 0 40px rgba(109, 0, 26, 0.8);
   }
 }
 
@@ -175,51 +175,43 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Enhanced focus states with vibrant yellow */
+/* Enhanced focus states with brand burgundy */
 *:focus-visible {
-  outline: 2px solid #fedd00;
+  outline: 2px solid #6d001a;
   outline-offset: 2px;
   border-radius: 0.375rem;
 }
 
 /* Custom color utilities */
-.text-brand-yellow {
-  color: #fedd00;
+.text-brand-burgundy {
+  color: #6d001a;
 }
 
-.text-brand-purple {
-  color: #0d000a;
+.text-brand-charcoal {
+  color: #262626;
 }
 
 .text-brand-white {
-  color: #f3f2f2;
+  color: #ffffff;
 }
 
-.bg-brand-yellow {
-  background-color: #fedd00;
+.bg-brand-burgundy {
+  background-color: #6d001a;
 }
 
-.bg-brand-purple {
-  background-color: #0d000a;
+.bg-brand-charcoal {
+  background-color: #262626;
 }
 
 .bg-brand-white {
-  background-color: #f3f2f2;
+  background-color: #ffffff;
 }
 
 .brand-hero {
-  background: #0d000a;
-  color: #f3f2f2;
+  background: #ffffff;
+  color: #262626;
   position: relative;
   overflow: hidden;
-}
-
-.brand-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(254, 221, 0, 0.04);
-  opacity: 1;
 }
 
 .brand-hero > * {
@@ -228,26 +220,31 @@ html {
 }
 
 .brand-section-soft {
-  background: #f3f2f2;
+  background: #ffffff;
 }
 
 .brand-section-dark {
-  background: #0d000a;
-  color: #f3f2f2;
+  background: #ffffff;
+  color: #262626;
+}
+
+/* Footer stays black by design, independent of the (now all-white) body sections */
+.footer-dark {
+  background: #000000;
+  color: #ffffff;
 }
 
 .brand-card {
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(13, 0, 10, 0.08);
-  box-shadow: 0 18px 50px rgba(13, 0, 10, 0.08);
+  border: 1px solid rgba(38, 38, 38, 0.08);
+  box-shadow: 0 18px 50px rgba(38, 38, 38, 0.08);
   backdrop-filter: blur(10px);
 }
 
 .brand-card-dark {
-  background: rgba(243, 242, 242, 0.08);
-  border: 1px solid rgba(254, 221, 0, 0.24);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(14px);
+  background: #ffffff;
+  border: 1px solid rgba(109, 0, 26, 0.2);
+  box-shadow: 0 18px 50px rgba(38, 38, 38, 0.08);
 }
 
 .brand-pill {
@@ -255,26 +252,26 @@ html {
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(254, 221, 0, 0.32);
-  background: rgba(254, 221, 0, 0.12);
-  color: #fedd00;
+  border: 1px solid rgba(109, 0, 26, 0.3);
+  background: rgba(109, 0, 26, 0.08);
+  color: #6d001a;
   padding: 0.5rem 0.9rem;
 }
 
 .brand-link {
-  color: #0d000a;
+  color: #262626;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .brand-link:hover {
-  color: #0d000a;
-  opacity: 0.72;
+  color: #6d001a;
+  opacity: 1;
 }
 
 .brand-outline-number {
-  background: rgba(254, 221, 0, 0.16);
-  color: #0d000a;
-  border: 1px solid rgba(254, 221, 0, 0.5);
+  background: rgba(109, 0, 26, 0.1);
+  color: #6d001a;
+  border: 1px solid rgba(109, 0, 26, 0.5);
 }
 
 /* Stagger animation delay for child elements */

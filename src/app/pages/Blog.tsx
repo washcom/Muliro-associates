@@ -94,8 +94,8 @@ export function Blog() {
       <section className="brand-hero py-20">
         <div className="container mx-auto px-4">
           <div className="brand-pill mb-5">Practical insurance intelligence</div>
-          <h1 className="text-4xl md:text-6xl mb-4 font-bold">Insurance Insights & Tips</h1>
-          <p className="text-xl text-[#f3f2f2]/80 max-w-3xl">
+          <h1 className="text-4xl md:text-6xl mb-4 font-bold text-[#262626]">Insurance Insights & Tips</h1>
+          <p className="text-xl text-[#262626]/70 max-w-3xl">
             Expert advice and practical tips to help you make informed insurance decisions
           </p>
         </div>
@@ -104,12 +104,12 @@ export function Blog() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-8">
-            <h2 className="text-2xl mb-4 font-bold text-[#0d000a]">Browse by Category</h2>
+            <h2 className="text-2xl mb-4 font-bold text-[#262626]">Browse by Category</h2>
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <button
                   key={category}
-                  className="px-4 py-2 bg-[#0d000a]/6 hover:bg-[#0d000a] hover:text-[#fedd00] rounded-full text-sm transition-colors"
+                  className="px-4 py-2 bg-[#262626]/6 hover:bg-[#6d001a] hover:text-white rounded-full text-sm transition-colors"
                 >
                   {category}
                 </button>
@@ -119,18 +119,18 @@ export function Blog() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="brand-card flex flex-col hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#fedd00]/60">
+              <Card key={post.id} className="brand-card flex flex-col hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#6d001a]/60">
                 <CardHeader>
                   <div className="mb-3">
-                    <span className="text-xs bg-[#0d000a] text-[#fedd00] px-3 py-1 rounded-full">
+                    <span className="text-xs bg-[#6d001a] text-white px-3 py-1 rounded-full">
                       {post.category}
                     </span>
                   </div>
-                  <CardTitle className="text-xl line-clamp-2 text-[#0d000a]">{post.title}</CardTitle>
-                  <CardDescription className="line-clamp-3 text-[#0d000a]/64">{post.excerpt}</CardDescription>
+                  <CardTitle className="text-xl line-clamp-2 text-[#262626]">{post.title}</CardTitle>
+                  <CardDescription className="line-clamp-3 text-[#262626]/64">{post.excerpt}</CardDescription>
                 </CardHeader>
                 <CardContent className="mt-auto">
-                  <div className="flex items-center gap-4 text-sm text-[#0d000a]/56 mb-4">
+                  <div className="flex items-center gap-4 text-sm text-[#262626]/56 mb-4">
                     <div className="flex items-center gap-1">
                       <User className="h-4 w-4" />
                       <span>{post.author}</span>
@@ -141,7 +141,7 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-[#0d000a]/56">{post.readTime}</span>
+                    <span className="text-sm text-[#262626]/56">{post.readTime}</span>
                     <button className="brand-link flex items-center gap-1 font-medium">
                       Read More <ArrowRight className="h-4 w-4" />
                     </button>
@@ -155,17 +155,17 @@ export function Blog() {
 
       <section className="brand-section-soft py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl mb-4 font-bold text-[#0d000a]">Subscribe to Our Newsletter</h2>
-          <p className="text-lg text-[#0d000a]/65 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl mb-4 font-bold text-[#262626]">Subscribe to Our Newsletter</h2>
+          <p className="text-lg text-[#262626]/65 mb-8 max-w-2xl mx-auto">
             Get the latest insurance tips, industry news, and special offers delivered to your inbox
           </p>
           <div className="max-w-md mx-auto flex gap-2">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-[#0d000a]/10 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-[#fedd00]"
+              className="flex-1 px-4 py-3 border border-[#262626]/10 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-[#6d001a]"
             />
-            <button className="px-6 py-3 bg-[#0d000a] text-[#fedd00] rounded-full hover:opacity-92 transition-colors">
+            <button className="px-6 py-3 bg-[#6d001a] text-white rounded-full hover:opacity-92 transition-colors">
               Subscribe
             </button>
           </div>

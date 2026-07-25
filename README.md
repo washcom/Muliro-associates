@@ -27,16 +27,16 @@ A modern React + Vite website for an insurance intermediary, built with Tailwind
 ## Getting started
 
 ```bash
-pnpm install
-pnpm run dev
+bun install
+bun run dev
 ```
 
 Open the local development URL shown in the terminal, usually `http://localhost:4173`.
 
 ## Available scripts
 
-- `pnpm run dev` — start the development server
-- `pnpm run build` — build the production bundle
+- `bun run dev` — start the development server
+- `bun run build` — build the production bundle
 
 ## Project structure
 
@@ -50,7 +50,7 @@ Open the local development URL shown in the terminal, usually `http://localhost:
 
 ## Notes
 
-- This repository is configured for `pnpm`, but you can also use `npm` if needed.
+- This repository is configured for `bun`.
 - Make sure you have a current Node.js version and support for ES modules.
 
 ## License

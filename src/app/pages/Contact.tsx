@@ -30,8 +30,8 @@ export function Contact() {
       <section className="brand-hero py-20">
         <div className="container mx-auto px-4 relative z-10">
           <div className="brand-pill mb-5">Support that feels human</div>
-          <h1 className="text-5xl md:text-6xl mb-4 text-[#fedd00] font-bold">Contact Us</h1>
-          <p className="text-xl text-[#f3f2f2]/80 max-w-3xl">
+          <h1 className="text-5xl md:text-6xl mb-4 text-[#262626] font-bold">Contact Us</h1>
+          <p className="text-xl text-[#262626]/70 max-w-3xl">
             Get in touch with our team. We're here to help with all your insurance needs.
           </p>
         </div>
@@ -42,13 +42,13 @@ export function Contact() {
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#0d000a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <MapPin className="h-7 w-7 text-[#fedd00]" />
+                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="h-7 w-7 text-white" />
                 </div>
-                <CardTitle className="text-xl text-[#0d000a]">Visit Our Office</CardTitle>
+                <CardTitle className="text-xl text-[#262626]">Visit Our Office</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#0d000a]/72 leading-relaxed">
+                <p className="text-[#262626]/72 leading-relaxed">
                   Muliro & Associates<br />
                   Moi Avenue, CBD<br />
                   Nairobi, Kenya
@@ -58,22 +58,22 @@ export function Contact() {
 
             <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#fedd00] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Phone className="h-7 w-7 text-[#0d000a]" />
+                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <Phone className="h-7 w-7 text-white" />
                 </div>
-                <CardTitle className="text-xl text-[#0d000a]">Call Us</CardTitle>
+                <CardTitle className="text-xl text-[#262626]">Call Us</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <div className="text-sm text-[#0d000a]/60">Phone:</div>
-                  <a href="tel:+254700123456" className="brand-link text-lg font-semibold">
-                    +254 700 123 456
+                  <div className="text-sm text-[#262626]/60">Phone:</div>
+                  <a href="tel:+254768777041" className="brand-link text-lg font-semibold">
+                    +254 768 777 041
                   </a>
                 </div>
                 <div>
-                  <div className="text-sm text-[#0d000a]/60">Alternative:</div>
-                  <a href="tel:+254711234567" className="brand-link text-lg font-semibold">
-                    +254 711 234 567
+                  <div className="text-sm text-[#262626]/60">Alternative:</div>
+                  <a href="tel:+254724794950" className="brand-link text-lg font-semibold">
+                    +254 724 794 950
                   </a>
                 </div>
               </CardContent>
@@ -81,22 +81,22 @@ export function Contact() {
 
             <Card className="brand-card border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
               <CardHeader>
-                <div className="mb-4 w-14 h-14 bg-[#0d000a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Mail className="h-7 w-7 text-[#fedd00]" />
+                <div className="mb-4 w-14 h-14 bg-[#6d001a] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <Mail className="h-7 w-7 text-white" />
                 </div>
-                <CardTitle className="text-xl text-[#0d000a]">Email Us</CardTitle>
+                <CardTitle className="text-xl text-[#262626]">Email Us</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <div className="text-sm text-[#0d000a]/60">General Inquiries:</div>
-                  <a href="mailto:info@muliroassociates.co.ke" className="brand-link break-all font-semibold">
-                    info@muliroassociates.co.ke
+                  <div className="text-sm text-[#262626]/60">General Inquiries:</div>
+                  <a href="mailto:mulirofrancis5@gmail.com" className="brand-link break-all font-semibold">
+                    mulirofrancis5@gmail.com
                   </a>
                 </div>
                 <div>
-                  <div className="text-sm text-[#0d000a]/60">Claims Support:</div>
-                  <a href="mailto:claims@muliroassociates.co.ke" className="brand-link break-all font-semibold">
-                    claims@muliroassociates.co.ke
+                  <div className="text-sm text-[#262626]/60">Claims Support:</div>
+                  <a href="mailto:mulirofrancis5@gmail.com" className="brand-link break-all font-semibold">
+                    mulirofrancis5@gmail.com
                   </a>
                 </div>
               </CardContent>
@@ -148,7 +148,7 @@ export function Contact() {
                           <Input
                             id="phone"
                             type="tel"
-                            placeholder="+254 700 123 456"
+                            placeholder="+254 768 777 041"
                             value={formData.phone}
                             onChange={(e) => handleChange("phone", e.target.value)}
                             required
@@ -202,29 +202,29 @@ export function Contact() {
 
             <div className="space-y-6">
               <div className="relative">
-                <div className="absolute inset-0 bg-[#fedd00] rounded-2xl blur-2xl opacity-20"></div>
-                <Card className="relative brand-section-dark text-white border-0 shadow-2xl">
+                <div className="absolute inset-0 bg-[#6d001a] rounded-2xl blur-2xl opacity-10"></div>
+                <Card className="relative brand-card text-[#262626] border-0 shadow-2xl">
                   <CardHeader>
                     <div className="flex items-center gap-3 mb-2">
-                      <Clock className="h-8 w-8" />
+                      <Clock className="h-8 w-8 text-[#6d001a]" />
                       <CardTitle className="text-2xl">Office Hours</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-3">
-                    <div className="flex justify-between bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <span className="text-[#f3f2f2]/70">Monday - Friday:</span>
+                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
+                      <span className="text-[#262626]/60">Monday - Friday:</span>
                       <span>8:00 AM - 5:00 PM</span>
                     </div>
-                    <div className="flex justify-between bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <span className="text-[#f3f2f2]/70">Saturday:</span>
+                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
+                      <span className="text-[#262626]/60">Saturday:</span>
                       <span>9:00 AM - 1:00 PM</span>
                     </div>
-                    <div className="flex justify-between bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                      <span className="text-[#f3f2f2]/70">Sunday:</span>
+                    <div className="flex justify-between bg-[#262626]/5 rounded-lg p-3">
+                      <span className="text-[#262626]/60">Sunday:</span>
                       <span>Closed</span>
                     </div>
-                    <div className="pt-4 mt-4 border-t border-white/20">
-                      <p className="text-sm text-[#f3f2f2]/70">
+                    <div className="pt-4 mt-4 border-t border-[#262626]/10">
+                      <p className="text-sm text-[#262626]/60">
                         Emergency claims support available 24/7
                       </p>
                     </div>
@@ -256,7 +256,7 @@ export function Contact() {
         </div>
       </section>
 
-      <section className="py-0 bg-[#e8e5e7]">
+      <section className="py-0 bg-white">
         <div className="w-full h-96">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.815365165658!2d36.81722931475393!3d-1.2864354990632948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6bb562d37%3A0x2ae8ce32e6c6c0b7!2sMoi%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1234567890123"
