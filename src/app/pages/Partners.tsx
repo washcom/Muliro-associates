@@ -67,7 +67,7 @@ export function Partners() {
     <div>
       <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl mb-4 font-bold text-[#262626]">Our Insurance Partners</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4 font-bold text-[#262626]">Our Insurance Partners</h1>
           <p className="text-xl text-[#262626]/70 max-w-3xl">
             We partner with Kenya's leading insurance underwriters to bring you the best coverage options
           </p>
@@ -101,11 +101,10 @@ export function Partners() {
               <Card key={index} className="brand-card hover:shadow-lg transition-shadow border-2 border-transparent hover:border-[#6d001a]/60">
                 <CardHeader>
                   <CardTitle className="text-xl text-[#262626]">{partner.name}</CardTitle>
-                  <CardDescription className="text-sm text-[#262626]/65">{partner.description}</CardDescription>
+                  <CardDescription className="hidden sm:block text-sm text-[#262626]/65">{partner.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div>
-                    <h4 className="text-sm font-semibold mb-2 text-[#262626]/60">Specialties:</h4>
                     <div className="flex flex-wrap gap-2">
                       {partner.specialties.map((specialty, idx) => (
                         <span

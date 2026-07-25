@@ -137,8 +137,8 @@ export function Home() {
           ))}
         </div>
 
-        {/* arrows — bottom right */}
-        <div className="absolute bottom-6 right-6 flex gap-2">
+        {/* arrows — bottom right, desktop only */}
+        <div className="hidden sm:flex absolute bottom-6 right-6 gap-2">
           <button
             onClick={prev}
             className="w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white flex items-center justify-center hover:bg-white/20 transition"

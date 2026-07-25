@@ -33,7 +33,7 @@ export function About() {
     <div>
       <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl mb-4 font-bold tracking-tight text-[#262626]">About Muliro & Associates</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4 font-bold tracking-tight text-[#262626]">About Muliro & Associates</h1>
           <p className="text-xl text-[#262626]/72 max-w-lg">
             Kenya's trusted insurance intermediary, committed to protecting what matters most to you.
           </p>

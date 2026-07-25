@@ -126,7 +126,7 @@ export function ProductDetail() {
               <product.icon className={`h-10 w-10 ${product.color}`} />
             </div>
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold">{product.title}</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">{product.title}</h1>
             </div>
           </div>
           <p className="text-xl max-w-3xl text-[#262626]/72">{product.description}</p>

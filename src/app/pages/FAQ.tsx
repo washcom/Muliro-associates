@@ -114,8 +114,8 @@ export function FAQ() {
       <section className="brand-hero py-12">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-4">
-            <HelpCircle className="h-12 w-12 text-[#6d001a]" />
-            <h1 className="text-4xl md:text-5xl font-bold text-[#262626]">Frequently Asked Questions</h1>
+            <HelpCircle className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#6d001a] flex-shrink-0" />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#262626]">Frequently Asked Questions</h1>
           </div>
           <p className="text-xl text-[#262626]/70 max-w-3xl">
             Find answers to common questions about insurance and our services
