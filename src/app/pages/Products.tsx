@@ -27,7 +27,7 @@ export function Products() {
 
   return (
     <div>
-      <section className="brand-hero py-12">
+      <section className="brand-hero py-6 sm:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4 text-[#262626] font-bold">Insurance Products</h1>
           <p className="text-xl text-[#262626]/70 max-w-3xl">

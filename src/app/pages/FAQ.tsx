@@ -111,7 +111,7 @@ export function FAQ() {
 
   return (
     <div>
-      <section className="brand-hero py-12">
+      <section className="brand-hero py-6 sm:py-12">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-4">
             <HelpCircle className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-[#6d001a] flex-shrink-0" />

@@ -157,7 +157,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           FEATURES
       ══════════════════════════════════════════ */}
-      <section className="py-14 bg-white">
+      <section className="py-8 sm:py-14 bg-white">
         <div className="container mx-auto px-6">
           <p className="text-[#6d001a] text-xs font-bold uppercase tracking-[3px] mb-2">
             Why choose us
@@ -187,7 +187,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           PRODUCTS
       ══════════════════════════════════════════ */}
-      <section className="py-14 bg-white border-t border-[#262626]/8">
+      <section className="py-8 sm:py-14 bg-white border-t border-[#262626]/8">
         <div className="container mx-auto px-6">
           <p className="text-[#6d001a] text-xs font-bold uppercase tracking-[3px] mb-2">
             Our Products
@@ -224,7 +224,7 @@ export function Home() {
       {/* ══════════════════════════════════════════
           CTA
       ══════════════════════════════════════════ */}
-      <section className="py-14 bg-white text-center border-t border-[#262626]/8">
+      <section className="py-8 sm:py-14 bg-white text-center border-t border-[#262626]/8">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#262626] tracking-tight max-w-xl mx-auto leading-tight">
           {t("home.cta.title")}
         </h2>

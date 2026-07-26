@@ -60,16 +60,16 @@ export function Quote() {
 
   return (
     <div>
-      <section className="brand-hero py-12">
+      <section className="brand-hero py-6 sm:py-12">
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4 text-[#262626] font-bold">Request a Quote</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl mb-2 sm:mb-4 text-[#262626] font-bold">Request a Quote</h1>
           <p className="text-xl text-[#262626]/70 max-w-3xl">
             Fill out the form below and our expert advisors will prepare a personalized quote for you
           </p>
         </div>
       </section>
 
-      <section className="brand-section-soft py-10">
+      <section className="brand-section-soft py-6 sm:py-10">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">

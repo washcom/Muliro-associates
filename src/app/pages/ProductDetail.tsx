@@ -226,7 +226,7 @@ export function ProductDetail() {
 
   return (
     <div>
-      <section className={`${product.bgColor} py-12`}>
+      <section className={`${product.bgColor} py-6 sm:py-12`}>
         <div className="container mx-auto px-4">
           <Button asChild variant="ghost" className="mb-6 -ml-4">
             <Link to="/products">
