@@ -35,7 +35,7 @@ export function Contact() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-[#6d001a] text-white hover:bg-[#6d001a]/90">
-              <a href="tel:+254768777041">
+              <a href="tel:+254724794950">
                 <Phone className="mr-2 h-4 w-4" /> Call Now
               </a>
             </Button>
@@ -62,21 +62,25 @@ export function Contact() {
           <div className="grid lg:grid-cols-5 gap-10">
             <div className="lg:col-span-2 space-y-8">
               <div>
-                <h3 className="font-bold text-lg text-[#262626] mb-1">Visit Our Office</h3>
+                <h3 className="font-bold text-lg text-[#262626] mb-1">Visit Our Offices</h3>
                 <p className="text-[#262626]/70 leading-relaxed">
                   Muliro & Associates<br />
                   Moi Avenue, CBD<br />
                   Nairobi, Kenya
                 </p>
+                <p className="text-[#262626]/70 leading-relaxed mt-3">
+                  Kimilili<br />
+                  Bungoma, Kenya
+                </p>
               </div>
 
               <div>
                 <h3 className="font-bold text-lg text-[#262626] mb-1">Call Us</h3>
-                <a href="tel:+254768777041" className="block brand-link font-semibold text-lg">
-                  +254 768 777 041
-                </a>
                 <a href="tel:+254724794950" className="block brand-link font-semibold text-lg">
                   +254 724 794 950
+                </a>
+                <a href="tel:+254768777041" className="block brand-link font-semibold text-lg">
+                  +254 768 777 041
                 </a>
               </div>
 
@@ -153,7 +157,7 @@ export function Contact() {
                           <Input
                             id="phone"
                             type="tel"
-                            placeholder="+254 768 777 041"
+                            placeholder="+254 724 794 950"
                             value={formData.phone}
                             onChange={(e) => handleChange("phone", e.target.value)}
                             required

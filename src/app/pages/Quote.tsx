@@ -46,7 +46,7 @@ export function Quote() {
             <div className="bg-[#6d001a]/14 p-4 rounded-2xl">
               <p className="text-sm text-[#262626]/72">
                 <strong>Need immediate assistance?</strong><br />
-                Call us at: <a href="tel:+254768777041" className="brand-link hover:underline">+254 768 777 041</a>
+                Call us at: <a href="tel:+254724794950" className="brand-link hover:underline">+254 724 794 950</a>
               </p>
             </div>
             <Button onClick={() => setSubmitted(false)} variant="outline" className="w-full">
@@ -62,7 +62,6 @@ export function Quote() {
     <div>
       <section className="brand-hero py-12">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="brand-pill mb-5">Fast, personalized pricing</div>
           <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4 text-[#262626] font-bold">Request a Quote</h1>
           <p className="text-xl text-[#262626]/70 max-w-3xl">
             Fill out the form below and our expert advisors will prepare a personalized quote for you
@@ -99,7 +98,7 @@ export function Quote() {
                         <Input
                           id="phone"
                           type="tel"
-                          placeholder="+254 768 777 041"
+                          placeholder="+254 724 794 950"
                           value={formData.phone}
                           onChange={(e) => handleChange("phone", e.target.value)}
                           required
@@ -171,8 +170,8 @@ export function Quote() {
                     <div className="space-y-4">
                       <div className="bg-[#262626]/5 rounded-xl p-4">
                         <div className="text-sm text-[#262626]/60">Call Us:</div>
-                        <a href="tel:+254768777041" className="text-xl text-[#6d001a] hover:underline">
-                          +254 768 777 041
+                        <a href="tel:+254724794950" className="text-xl text-[#6d001a] hover:underline">
+                          +254 724 794 950
                         </a>
                       </div>
                       <div className="bg-[#262626]/5 rounded-xl p-4">

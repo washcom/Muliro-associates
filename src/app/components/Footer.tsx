@@ -64,6 +64,14 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-white flex-shrink-0 mt-0.5" />
                 <span>Nairobi, Kenya<br />CBD, Moi Avenue</span>
               </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="h-5 w-5 text-white flex-shrink-0 mt-0.5" />
+                <span>Kimilili, Bungoma<br />Kenya</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-white flex-shrink-0" />
+                <span>+254 724 794 950</span>
+              </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-white flex-shrink-0" />
                 <span>+254 768 777 041</span>

@@ -171,8 +171,8 @@ export function FAQ() {
               </div>
               <div className="mt-6 pt-6 border-t">
                 <p className="text-sm text-[#262626]/60 mb-2">Or call us directly:</p>
-                <a href="tel:+254768777041" className="text-2xl brand-link font-bold">
-                  +254 768 777 041
+                <a href="tel:+254724794950" className="text-2xl brand-link font-bold">
+                  +254 724 794 950
                 </a>
               </div>
             </CardContent>

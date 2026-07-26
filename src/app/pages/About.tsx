@@ -1,25 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 
 export function About() {
-  const values = [
-    {
-      title: "Integrity",
-      description: "We operate with transparency and honesty in all our dealings",
-    },
-    {
-      title: "Client-Focused",
-      description: "Your needs and interests always come first",
-    },
-    {
-      title: "Excellence",
-      description: "We strive for the highest standards in service delivery",
-    },
-    {
-      title: "Innovation",
-      description: "We embrace new technologies to serve you better",
-    },
-  ];
-
   const whyChooseUs = [
     "Independent advice, not tied to one insurer",
     "Access to Kenya's top-rated underwriters",
@@ -65,25 +46,7 @@ export function About() {
         </div>
       </section>
 
-      <section className="brand-section-soft py-10">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl mb-4 font-bold text-[#262626]">Our Core Values</h2>
-            <p className="text-lg text-[#262626]/65">The principles that guide everything we do</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <div key={index} className="text-center p-6">
-                <div className="text-sm font-bold text-[#6d001a]/40 mb-2">0{index + 1}</div>
-                <h3 className="text-xl font-bold text-[#262626] mb-2">{value.title}</h3>
-                <p className="text-[#262626]/65">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-white">
+      <section className="py-10 bg-white border-t border-[#262626]/8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl mb-8 text-center font-bold text-[#262626]">Why Choose Muliro & Associates?</h2>

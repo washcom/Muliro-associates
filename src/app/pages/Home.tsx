@@ -10,52 +10,52 @@ import { useLanguage } from "../contexts/LanguageContext";
 /* ─── slide data (Unsplash — no embed/CORS issues) ─── */
 const SLIDES = [
   {
-    img: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1664181220731-06219378d8c7?w=1200&q=80",
     tag: "Motor",
     caption: "Coverage that keeps you moving",
   },
   {
-    img: "https://images.unsplash.com/photo-1666887360361-d4e8487f0026?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&q=80",
     tag: "Health",
     caption: "Quality care when you need it most",
   },
   {
-    img: "https://images.unsplash.com/photo-1516013474378-d6498f0d1434?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1496275068113-fff8c90750d1?w=1200&q=80",
     tag: "Life",
     caption: "Protecting the people who matter",
   },
   {
-    img: "https://images.unsplash.com/photo-1724482606633-fa74fe4f5de1?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1781504798134-53a5a833c34f?w=1200&q=80",
     tag: "Property",
     caption: "Peace of mind for what you own",
   },
   {
-    img: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1656049471454-ff3c59812741?w=1200&q=80",
     tag: "Savings",
     caption: "Building security for the future",
   },
   {
-    img: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1741991110666-88115e724741?w=1200&q=80",
     tag: "Trust",
     caption: "A partnership built to last",
   },
   {
-    img: "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1200&q=80",
     tag: "Care",
     caption: "Expert guidance, every step",
   },
   {
-    img: "https://images.unsplash.com/photo-1547226846-000337daf073?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1581578731509-8ae9c5a3e7d3?w=1200&q=80",
     tag: "Family",
     caption: "Coverage for every stage of life",
   },
   {
-    img: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1661963603110-632028a09c19?w=1200&q=80",
     tag: "Drive",
     caption: "On the road, fully protected",
   },
   {
-    img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?w=1200&q=80",
     tag: "Policy",
     caption: "Clear terms, no surprises",
   },
@@ -210,7 +210,7 @@ export function Home() {
                     <CardDescription className="text-[#262626]/60 text-sm leading-relaxed">
                       {product.description}
                     </CardDescription>
-                    <p className="text-[#6d001a] text-xs font-semibold mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <p className="text-[#6d001a] text-xs font-semibold mt-3">
                       Explore →
                     </p>
                   </CardHeader>

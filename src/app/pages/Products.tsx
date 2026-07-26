@@ -9,19 +9,19 @@ export function Products() {
       id: "motor",
       title: "Motor Insurance",
       description: "Comprehensive coverage for your vehicle including third-party, theft, and accident protection",
-      image: "https://images.unsplash.com/photo-1684892276099-cb0f223ded65?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1664181220731-06219378d8c7?w=800&q=80",
     },
     {
       id: "health",
       title: "Health Insurance",
       description: "Quality healthcare coverage for you and your family with access to top medical facilities",
-      image: "https://images.unsplash.com/photo-1666886573553-6548db92db79?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
     },
     {
       id: "life",
       title: "Life Insurance",
       description: "Secure your family's financial future with comprehensive life coverage",
-      image: "https://images.unsplash.com/photo-1596510914965-9ae08acae566?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1496275068113-fff8c90750d1?w=800&q=80",
     },
   ];
 
