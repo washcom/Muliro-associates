@@ -201,4 +201,19 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+
+  @media (max-width: 640px) {
+    body,
+    button,
+    input {
+      font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Montserrat", "Segoe UI", sans-serif;
+    }
+  }
 }
